@@ -2,6 +2,8 @@
 
 interface Funkcijos {
     function sudetis($skaicius1, $skaicius2) : int;
+    function atimtis($skaicius1, $skaicius2) : int;
+
 }
 
 
@@ -11,5 +13,9 @@ class Calculator implements Funkcijos{
 
     function sudetis($skaicius1, $skaicius2) : int {
         return ($skaicius1 + $skaicius2);
+    }
+
+    function atimtis($skaicius1, $skaicius2) : int {
+        return ($skaicius1 - $skaicius2);
     }
 }
