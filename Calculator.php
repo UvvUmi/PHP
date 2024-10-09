@@ -5,6 +5,7 @@ interface Funkcijos {
     function atimtis($skaicius1, $skaicius2) : int;
     function sandauga($skaicius1, $skaicius2) : int;
     function dalyba($skaicius1, $skaicius2) : int;
+    function keltiLaipsniu($skaicius1, $skaicius2) : int;
 
 }
 
@@ -28,4 +29,10 @@ class Calculator implements Funkcijos{
     function dalyba($skaicius1, $skaicius2) : int {
         return ($skaicius1 / $skaicius2);
     }
+
+    function keltiLaipsniu($skaicius1, $skaicius2) : int {
+        return ($skaicius1 ** $skaicius2);
+    }
 }
+
+?>
